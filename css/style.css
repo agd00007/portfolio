@@ -255,8 +255,6 @@ body {
   justify-content: center;
 }
 
-/* Perfil profesional de la portada */
-
 .professional-profile {
   display: block;
 
@@ -289,8 +287,6 @@ body {
   color: var(--text);
 
   text-align: left;
-
-  animation: none;
 }
 
 .sub-header p {
@@ -305,8 +301,6 @@ body {
   color: var(--text-soft);
 
   text-align: left;
-
-  animation: none;
 }
 
 .header-text .header-buttons {
@@ -314,8 +308,6 @@ body {
 
   margin-top: 32px;
 }
-
-/* Primer botón de la portada */
 
 .header-text .nav-button:first-child {
   background: var(--green);
@@ -624,20 +616,36 @@ body {
   line-height: 1.7;
 }
 
-.information-game a,
-.information-porfolio a,
-.information-web a,
-.information-powerbi a {
+
+/* ================================
+   PROJECT LINKS
+================================ */
+
+.project-links {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 12px;
+
+  margin-top: 20px;
+}
+
+.project-links a {
   display: inline-flex;
 
   align-items: center;
   justify-content: center;
 
-  padding: 10px 18px;
+  gap: 8px;
+
+  padding: 11px 18px;
 
   border: 1px solid var(--green);
 
   border-radius: 8px;
+
+  background: transparent;
 
   color: var(--green);
 
@@ -653,10 +661,22 @@ body {
     transform 0.2s ease;
 }
 
-.information-game a:hover,
-.information-porfolio a:hover,
-.information-web a:hover,
-.information-powerbi a:hover {
+.project-links a i {
+  width: auto;
+  height: auto;
+
+  margin: 0;
+
+  padding: 0;
+
+  background: transparent;
+
+  color: inherit;
+
+  font-size: 1rem;
+}
+
+.project-links a:hover {
   background: var(--green);
 
   color: #071009;
@@ -857,5 +877,13 @@ body {
 
   .contacts-links {
     grid-template-columns: 1fr;
+  }
+
+  .project-links {
+    flex-direction: column;
+  }
+
+  .project-links a {
+    width: 100%;
   }
 }
