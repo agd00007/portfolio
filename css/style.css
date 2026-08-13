@@ -79,7 +79,6 @@ body {
   z-index: 100;
 }
 
-
 .header-buttons {
   display: flex;
 
@@ -93,11 +92,9 @@ body {
   margin-top: 30px;
 }
 
-
 .main-header .header-buttons {
   margin-top: 0;
 }
-
 
 .nav-button {
   display: inline-flex;
@@ -126,7 +123,6 @@ body {
     transform 0.2s ease;
 }
 
-
 .nav-button:hover {
   color: #08100b;
 
@@ -135,6 +131,10 @@ body {
   border-color: var(--green);
 
   transform: translateY(-2px);
+}
+
+.nav-button:focus {
+  outline: 3px solid rgba(120, 224, 155, 0.25);
 }
 
 
@@ -151,7 +151,6 @@ body {
 
   overflow: hidden;
 }
-
 
 .home::before {
   content: "";
@@ -172,7 +171,6 @@ body {
 
   pointer-events: none;
 }
-
 
 .sub-header {
   width: 100%;
@@ -213,7 +211,6 @@ body {
   box-shadow: var(--shadow);
 }
 
-
 .img-wrapper::before {
   content: "";
 
@@ -230,11 +227,9 @@ body {
   pointer-events: none;
 }
 
-
 .img-wrapper::after {
   display: none;
 }
-
 
 .img-wrapper img {
   width: 100%;
@@ -260,21 +255,23 @@ body {
   justify-content: center;
 }
 
+/* Perfil profesional de la portada */
 
-.header-text::before {
-  content: "WEB DEVELOPMENT  •  DATA ANALYTICS";
+.professional-profile {
+  display: block;
 
   margin-bottom: 18px;
 
   color: var(--green);
 
-  font-size: 0.8rem;
+  font-size: 0.85rem;
 
   font-weight: 700;
 
-  letter-spacing: 2px;
-}
+  letter-spacing: 1.5px;
 
+  text-transform: uppercase;
+}
 
 .sub-header h1 {
   width: auto;
@@ -296,7 +293,6 @@ body {
   animation: none;
 }
 
-
 .sub-header p {
   max-width: 700px;
 
@@ -313,13 +309,13 @@ body {
   animation: none;
 }
 
-
 .header-text .header-buttons {
   justify-content: flex-start;
 
   margin-top: 32px;
 }
 
+/* Primer botón de la portada */
 
 .header-text .nav-button:first-child {
   background: var(--green);
@@ -331,9 +327,10 @@ body {
   font-weight: 700;
 }
 
-
 .header-text .nav-button:first-child:hover {
   background: var(--green-dark);
+
+  border-color: var(--green-dark);
 }
 
 
@@ -356,7 +353,6 @@ body {
 
   text-align: center;
 }
-
 
 .personal-information h2::after,
 .projects h2::after,
@@ -387,7 +383,6 @@ body {
 
   margin: auto;
 }
-
 
 .personal-information p {
   display: block;
@@ -430,7 +425,6 @@ body {
   border-bottom: 1px solid var(--border);
 }
 
-
 .scroll {
   display: flex;
 
@@ -442,7 +436,6 @@ body {
 
   animation: scroll 28s linear infinite;
 }
-
 
 .scroll img {
   width: 60px;
@@ -464,7 +457,6 @@ body {
     transform 0.2s ease;
 }
 
-
 .scroll img:hover {
   filter: grayscale(0%);
 
@@ -472,7 +464,6 @@ body {
 
   transform: scale(1.12);
 }
-
 
 @keyframes scroll {
 
@@ -483,7 +474,6 @@ body {
   to {
     transform: translateX(-50%);
   }
-
 }
 
 
@@ -497,7 +487,6 @@ body {
   margin: auto;
 }
 
-
 .cards {
   display: grid;
 
@@ -507,7 +496,6 @@ body {
 
   margin-top: 55px;
 }
-
 
 .card-game,
 .card-porfolio,
@@ -531,7 +519,6 @@ body {
     box-shadow 0.25s ease;
 }
 
-
 .card-game:hover,
 .card-porfolio:hover,
 .card-web:hover,
@@ -544,7 +531,6 @@ body {
     0 25px 55px rgba(0, 0, 0, 0.45),
     0 0 25px rgba(120, 224, 155, 0.05);
 }
-
 
 .projects img {
   width: 100%;
@@ -563,7 +549,6 @@ body {
     opacity 0.25s ease,
     transform 0.4s ease;
 }
-
 
 .card-game:hover img,
 .card-porfolio:hover img,
@@ -585,7 +570,6 @@ body {
 .information-powerbi {
   padding: 30px;
 }
-
 
 .card-game i,
 .card-porfolio i,
@@ -610,7 +594,6 @@ body {
   font-size: 1.3rem;
 }
 
-
 .information-game h3,
 .information-porfolio h3,
 .information-web h3,
@@ -626,7 +609,6 @@ body {
   text-align: left;
 }
 
-
 .information-game p,
 .information-porfolio p,
 .information-web p,
@@ -641,7 +623,6 @@ body {
 
   line-height: 1.7;
 }
-
 
 .information-game a,
 .information-porfolio a,
@@ -672,7 +653,6 @@ body {
     transform 0.2s ease;
 }
 
-
 .information-game a:hover,
 .information-porfolio a:hover,
 .information-web a:hover,
@@ -702,7 +682,6 @@ body {
   text-align: center;
 }
 
-
 .contacts-links {
   width: 100%;
 
@@ -716,7 +695,6 @@ body {
 
   margin-top: 10px;
 }
-
 
 .contacts-links a {
   min-height: 110px;
@@ -748,13 +726,11 @@ body {
     color 0.2s ease;
 }
 
-
 .contacts-links a i {
   color: var(--green);
 
   font-size: 1.5rem;
 }
-
 
 .contacts-links a:hover {
   border-color: var(--green);
@@ -766,7 +742,7 @@ body {
 
 
 /* ================================
-   RESPONSIVE
+   RESPONSIVE - TABLET
 ================================ */
 
 @media (max-width: 950px) {
@@ -795,7 +771,7 @@ body {
     align-items: center;
   }
 
-  .header-text::before {
+  .professional-profile {
     text-align: center;
   }
 
@@ -815,9 +791,12 @@ body {
   .projects img {
     height: 230px;
   }
-
 }
 
+
+/* ================================
+   RESPONSIVE - MOBILE
+================================ */
 
 @media (max-width: 650px) {
 
@@ -843,6 +822,12 @@ body {
     max-width: 270px;
 
     height: 350px;
+  }
+
+  .professional-profile {
+    font-size: 0.72rem;
+
+    letter-spacing: 1px;
   }
 
   .sub-header h1 {
@@ -873,5 +858,4 @@ body {
   .contacts-links {
     grid-template-columns: 1fr;
   }
-
 }
