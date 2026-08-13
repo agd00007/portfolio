@@ -1,86 +1,144 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Proyectos</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  >
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Proyectos | Ana María Gutiérrez</title>
 </head>
 
 <body>
+
   <header class="main-header">
-      <div class="header-buttons">
-        <a href="index.html" class="nav-button">Portada</a>
-        <a href="about.html" class="nav-button">Conóceme</a>
-        <a href="projects.html" class="nav-button">Proyectos</a>
-        <a href="contact.html" class="nav-button">Contacto</a>
-      </div>
-   </header>
+    <div class="header-buttons">
+      <a href="index.html" class="nav-button">Portada</a>
+      <a href="about.html" class="nav-button">Conóceme</a>
+      <a href="projects.html" class="nav-button">Proyectos</a>
+      <a href="contact.html" class="nav-button">Contacto</a>
+    </div>
+  </header>
 
-    <section class="section projects">
-      <h2>Mis proyectos</h2>
+  <section class="section projects">
 
-      <div class="cards">
-        <button class="card-game">
-          <img src="img/game.jpeg" class="game" />
-          <div class="information-game">
-            <i class="fas fa-gamepad"></i>
-            <h3>Juego</h3>
-            <p>Proyecto con canvas y JavaScript</p>
-            <a href="#">Ver proyecto</a>
-          </div>
-        </button>
+    <h2>Mis proyectos</h2>
 
-        <button class="card-porfolio">
-          <img src="img/porfolio.jpg" class="porfolio" />
-          <div class="information-porfolio">
-            <i class="fas fa-laptop-code"></i>
-            <h3>Porfolio</h3>
-            <p>Proyecto con canvas y JavaScript</p>
-            <a href="#">Ver proyecto</a>
-          </div>
-        </button>
+    <div class="cards">
 
-        <button class="card-web">
-          <img src="img/web.jpg" class="web" />
-          <div class="information-web">
-            <i class="fas fa-globe"></i>
-            <h3>Web</h3>
-            <p>Proyecto backend y frontend</p>
-            <a href="#">Ver proyecto</a>
-          </div>
-        </button>
+      <!-- BELLA RITUAL -->
+      <div class="card-web">
+        <img src="img/web.jpg" class="web" alt="Bella Ritual E-commerce">
 
-        <button class="card-powerbi">
-          <img src="img/powerbi.jpg" class="powerbi" />
-          <div class="information-powerbi">
-            <i class="fas fa-database"></i>
-            <h3>Web</h3>
-            <p>Proyecto con powerBi</p>
-            <a href="#">Ver proyecto</a>
-          </div>
-        </button>
+        <div class="information-web">
+          <i class="fas fa-shopping-cart"></i>
+
+          <h3>Bella Ritual E-commerce</h3>
+
+          <p>
+            Aplicación e-commerce full-stack desarrollada con React,
+            Node.js, Express y MongoDB.
+          </p>
+
+          <a
+            href="https://github.com/agd00007/bella-rituals-ecommerce"
+            target="_blank"
+          >
+            Ver proyecto
+          </a>
+        </div>
       </div>
 
-      <div class="header-buttons">
-       <a href="index.html" class="nav-button">Volver al inicio</a>
 
+      <!-- METROBUS -->
+      <div class="card-powerbi">
+        <img src="img/powerbi.jpg" class="powerbi" alt="MetroBus Data Analytics">
+
+        <div class="information-powerbi">
+          <i class="fas fa-chart-bar"></i>
+
+          <h3>MetroBus Data Analytics</h3>
+
+          <p>
+            Proyecto end-to-end de análisis de datos con Python,
+            SQL y Power BI, incluyendo KPIs y calidad del dato.
+          </p>
+
+          <a
+            href="https://github.com/agd00007/metrobus-data-analytics"
+            target="_blank"
+          >
+            Ver proyecto
+          </a>
+        </div>
       </div>
-    </section>
 
 
-  </body>
-</html>
+      <!-- JUMPY GAME -->
+      <div class="card-game">
+        <img src="img/game.jpeg" class="game" alt="Jumpy Game">
 
-    
+        <div class="information-game">
+          <i class="fas fa-gamepad"></i>
+
+          <h3>Jumpy Game</h3>
+
+          <p>
+            Juego 2D desarrollado con JavaScript y HTML5 Canvas,
+            con colisiones, puntuación y diferentes dificultades.
+          </p>
+
+          <a
+            href="https://github.com/agd00007/jumpy-game"
+            target="_blank"
+          >
+            Ver proyecto
+          </a>
+        </div>
+      </div>
+
+
+      <!-- MINI E-COMMERCE -->
+      <div class="card-porfolio">
+        <img src="img/porfolio.jpg" class="porfolio" alt="React Mini E-commerce">
+
+        <div class="information-porfolio">
+          <i class="fab fa-react"></i>
+
+          <h3>React Mini E-commerce</h3>
+
+          <p>
+            Mini e-commerce desarrollado con React, React Router,
+            Context API y Tailwind CSS.
+          </p>
+
+          <a
+            href="https://github.com/agd00007/react-mini-ecommerce"
+            target="_blank"
+          >
+            Ver proyecto
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="header-buttons">
+      <a href="index.html" class="nav-button">Volver al inicio</a>
+    </div>
+
+  </section>
+
 </body>
 </html>
